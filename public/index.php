@@ -28,36 +28,12 @@
         </form>
 
         <hr>
-        <p>The above form posts to process.php. After processing, the user must be redirected here, and the converted value must be displayed.</p>
-        <h1>FizzBuzz rules</h1>
-        <ul>
-            <li>If a number can be divided by 3 say 'fizz'</li>
-            <li>If a number can be divided by 5 say 'buzz'</li>
-            <li>More rules may follow later :)</li>
-        </ul>
-        <h2>Example</h2>
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>fizz</li>
-            <li>4</li>
-            <li>buzz</li>
-            <li>fizz</li>
-            <li>7</li>
-            <li>8</li>
-            <li>fizz</li>
-            <li>buzz</li>
-            <li>11</li>
-            <li>fizz</li>
-            <li>13</li>
-            <li>14</li>
-            <li>fizz</li>
-            <li>16</li>
-            <li>17</li>
-            <li>fizz</li>
-            <li>19</li>
-            <li>buzz</li>
-        </ul>
+
+<?php
+if ( ! empty($_SESSION['integer'])) {
+    echo '<h2>You get: ' . $_SESSION['integer'] . '</h2>';
+}
+?>
 
     </section>
 </div>

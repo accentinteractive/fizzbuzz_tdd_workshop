@@ -55,3 +55,5 @@ ehthumbs.db
 # Always Version .keep and .gitkeep files
 !.keep
 !.gitkeep
+
+tests/_output/*
