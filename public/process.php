@@ -14,6 +14,6 @@ catch (Exception $e) {
     $_SESSION['integer'] = $e->getMessage();
 }
 
-header('location: index.php');
+header('location: ./');
 
 

@@ -22,7 +22,7 @@
         <form action="process.php" method="post">
             <div class="form-group">
                 <label>Convert any number to FizzBuzz</label>
-                <input type="text" class="form-control" name="integer" placeholder="Your integer">
+                <input type="text" class="form-control" name="integer" id="integer" placeholder="Your integer">
             </div>
             <input type="submit" class="btn btn-primary" value="Get FizzBuzz">
         </form>
@@ -37,5 +37,12 @@ if ( ! empty($_SESSION['integer'])) {
 
     </section>
 </div>
+
+<script>
+    window.onload = function() {
+        document.getElementById("integer").focus();
+    };
+</script>
+
 </body>
 </html>
